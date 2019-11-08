@@ -1,5 +1,5 @@
 # GitLab_CI-CD
-GitLab CI/CD
+GitLab CI/CD Ubuntu-Server-Start
 
 `apt-get update && apt-get upgrade && apt-get install htop iotop mc tree figlet ssh`
 
