@@ -2,7 +2,6 @@
 GitLab CI/CD
 
   apt-get update && apt-get upgrade && apt-get install htop iotop mc tree figlet ssh
-
   apt-get update && apt-get upgrade -y
 
  apt-get install docker.io
