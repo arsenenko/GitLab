@@ -1,8 +1,10 @@
 # GitLab_CI-CD
 GitLab CI/CD
 
-`apt-get update && apt-get upgrade && apt-get install htop iotop mc tree figlet ssh`
-`apt-get update && apt-get upgrade -y`
+`apt-get update && apt-get upgrade && apt-get install htop iotop mc tree figlet ssh
+apt-get update && apt-get upgrade -y`
+
+
 `apt-get install docker.io`
 `sudo apt-get install gitlab-runner`
 `sudo gitlab-runner register`
