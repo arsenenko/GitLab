@@ -1,0 +1,30 @@
+image: docker:stable
+stages:
+  - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+deploy:
+  stage: deploy
+  tags:
+    - aa.arsenenko
+  before_script:
+    - docker info
+    - apk add --no-cache python py2-pip
+    - pip install --no-cache-dir docker-compose==1.12.0
+   # - docker-compose -v
+
+  script:
+#     - docker-compose -f docker-compose.yaml 
+#    - docker-compose pull
+#    - docker-compose down
+    - docker-compose up -d
+  variables:
+    ENV_NAME: foo
+    SERVER_NAME: bar
+  environment:
+    name: dev
+  only:
+    - master
+
